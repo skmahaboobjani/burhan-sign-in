@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assignment.css" />
+    <style>
+        body{
+            background-color: seagreen;
+        }
+        form {
+            background-color: #fff;
+            max-width: 250px;
+            margin: 25px auto;
+            padding: 10px ;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+ 
+        #p1{
+            margin: 5px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <h2 class="ubuntu-font" style="text-align: center;">Register</h2>
+    </div>
+    <div class="form-container">
+        <form>
+            
+            <input type="text" class="inline m-4" name="f_name" id="p1" placeholder="First Name" autocomplete="off" required/><br/>
+            <input type="text" class="inline m-4" name="l_name" id="p1" placeholder="Last Name" autocomplete="off"/><br/>
+            
+            <input type="email" class="inline m-4" name="mail" id="p1" placeholder="Email ID" autocomplete="off" required/><br/>
+            <input type="tel" class="inline m-4" name="phone" id="p1" placeholder="Phone Number" autocomplete="off" required pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" title="Please enter in the format 1111-111-111"/>
+            <br />
+            <input class="inline m-4" type="date" name="date_of_birth" id="p1" max="2022-01-01" /><br/>
+            
+            <textarea name="address" id="p1" placeholder="Address" class="m-4"></textarea><br/>
+            
+            <label for="gender" id="p1"> Select you gender</label>
+<select name="gender">
+	<option value="none" selected>Gender</option>
+	<option value="male">Male</option>
+	<option value="female">Female</option>
+	<option value="other">other</option>
+</select><br/>
+<label >username : 
+    <input name="username" id="p1" type="text" /></label> <br>
+        <label >password : 
+    <input name="password" id="p1" type="password" /></label>  <br/>   
+        <label>confirm password:
+    <input type="password" name="p1" id="confirm_password" />
+        </label><br/>
+    
+            <input type="submit" id="p1" value="sign in" />
+            <input type="reset" />
+        </form>
+    </div>
+</body>
+</html>
